@@ -1,6 +1,13 @@
 .header {
   background-image: url(/images/fairway-pizza-palm-harbor.jpg);
   background-size: cover;
-  
+  opacity: .9;
+  padding-left:550px;
+
 }
 
+.title {
+  color: rgb(54, 36, 2);
+  padding-left: 10px;
+  
+}
