@@ -3,11 +3,15 @@
   background-size: cover;
   opacity: .9;
   padding-left:550px;
-
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 .title {
   color: rgb(54, 36, 2);
-  padding-left: 10px;
-  
+  font-family: 'Dancing Script';
+  font-size: larger;
+}
+h1 {
+  font-size: 80px;
 }
