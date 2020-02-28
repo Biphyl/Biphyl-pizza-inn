@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" media="all">
+  <link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.min.css" media="all">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Dancing+Script|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
   <title>Biphyl Pizza Point</title>
@@ -20,7 +21,11 @@
           <img src="/images/000821-Free-Logo-Maker-create-free-italian-pizza-Logo-design-03.png" alt="" height="400px" width="400px">
         </div>
       </div>
-    </div><br><br</br>
+    </div>
+
+    <div class="welcome">
+      <h1>WELCOME TO BIPHYL PIZZA GURUS</h1>
+    </div>
 
     <div class="description">
       <div id="card">
@@ -40,9 +45,29 @@
           <p>Pizza size generally varies between: Small Pizza: 8-10 inches with 6 slices. Medium Pizza: 12 inches with 8 slices. Large Pizza: 14 inch with 10 slices.</p>
         </div>
       </div>
+    </div><br><br><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form">
+            <div class="form-group">
+              <label for="size">Size</label><br>
+              <select name="form-control" id="size" class="btn btn-success btn-lg">
+                <option value="choose" id="choose" class="btn-primary"><b>Choose size</b></option>
+                <option value="small" id="small" class="btn-primary">Small</option>
+                <option value="medium" id="medium" class="btn-primary">Medium</option>
+                <option value="large" id="large" class="btn-primary">Large</option>
+              </select>
+            </div><br>
+
+          </div>
+        </div >
+        <div class="col-md-6">
+
+        </div>
+      </div>
     </div>
-
-
   </div>
   
 
