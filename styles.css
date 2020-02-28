@@ -16,6 +16,12 @@ h1 {
   font-size: 80px;
 }
 
+.welcome {
+  background-color: rgb(145, 196, 196);
+  padding: 70px;
+  font-family: 'Barlow Condensed' ;
+}
+
 #card {
 display: flex;
 justify-content: space-around;
@@ -31,6 +37,10 @@ align-items: center;
 background-color: rgb(229, 230, 235);
 height: 440px;
 width: 300px;
+}
+
+.cards p {
+  font-family: 'Barlow Condensed' ;
 }
 
 .cards:hover {
