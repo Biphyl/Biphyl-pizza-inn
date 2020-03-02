@@ -25,7 +25,7 @@ function topping(){
 function getPepperoni(){
   var Pepperoni = 0 ;
   var pepperoni = document.getElementById("pepperoni");
-  if (pepperoni.checked === true) {
+  if (pepperoni.onselect === true) {
     Pepperoni = 150 ;
   }
   return parseInt(Pepperoni);
@@ -34,7 +34,7 @@ function getPepperoni(){
 function getMushrooms(){
   var Mushrooms = 0;
   var mushrooms = document.getElementById("mushrooms");
-  if (mushrooms.checked === true) {
+  if (mushrooms.onselect === true) {
     Mushrooms = 150 ;
   }
   return parseInt(Mushrooms);
@@ -42,7 +42,7 @@ function getMushrooms(){
 function getOnions(){
   var Onions = 0;
   var onions = document.getElementById("onions");
-  if (onions.checked === true) {
+  if (onions.onselect === true) {
     Onions = 150 ;
   }
   return parseInt(Onions);
@@ -50,7 +50,7 @@ function getOnions(){
 function getSausage(){
   var Sausage = 0;
   var sausage = document.getElementById("sausage");
-  if (sausage.checked === true) {
+  if (sausage.onselect === true) {
     Sausage = 150 ;
   }
   return parseInt(Sausage);
@@ -58,8 +58,8 @@ function getSausage(){
 function getBacon(){
   var Bacon = 0;
   var bacon = document.getElementById("bacon");
-  if (bacon.checked === true){
-    bacon = 150;
+  if (bacon.onselect === true){
+    Bacon = 150;
   }
   return parseInt(bacon)
 }
@@ -72,7 +72,7 @@ function calculate() {
 function Total() {
   var add = (size() + crust() + getPepperoni() + getMushrooms() + getOnions() + getSausage() + getBacon()) * getNumber() + 150;
 
-  alert("Dear customer,your total cost is ksh" + add + '' + " your order will be delivered after 30 min at your location.Thank you.");
+  alert("Dear customer,your total cost is ksh" + add + '' + " your order will be delivered to you in 30 minutes at your location.Thank you for shopping with us.");
 
 }
 
