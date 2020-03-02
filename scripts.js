@@ -64,13 +64,13 @@ function getBacon(){
   return parseInt(bacon)
 }
 function calculate() {
-  var calculate = (size() + crust() + getPepperoni() + getMushrooms() + getOnions() + getSausage()) * getNumber();
+  var calculate = (size() + crust() + getPepperoni() + getMushrooms() + getOnions() + getSausage() + getBacon()) * getNumber();
   document.getElementById("show").innerHTML = "Hello ,your order is " + ' ' + '' + getNumber() + '' + '' + '' + " pizza" + " and the cost  is ksh. " + calculate;
 
 }
 //    Total price plus delivery charge 
 function Total() {
-  var add = (size() + crust() + getPepperoni() + getMushrooms() + getOnions() + getSausage()) * getNumber() + 150;
+  var add = (size() + crust() + getPepperoni() + getMushrooms() + getOnions() + getSausage() + getBacon()) * getNumber() + 150;
 
   alert("Dear customer,your total cost is ksh" + add + '' + " your order will be delivered after 30 min at your location.Thank you.");
 
