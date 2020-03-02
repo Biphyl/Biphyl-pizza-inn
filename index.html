@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"
     media="all">
@@ -14,101 +16,131 @@
     href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Dancing+Script|Open+Sans+Condensed:300&display=swap"
     rel="stylesheet">
   <title>Biphyl Pizza Point</title>
+  <script src="/scripts.js"> </script>
 </head>
 
 <body>
-  <div class="content">
-    <div class="header">
-      <div class="container">
-        <div class="title">
-          <h1><b>Biphyl Pizza Gurus</b></h1>
-        </div>
-        <div class="logo">
-          <img src="/images/000821-Free-Logo-Maker-create-free-italian-pizza-Logo-design-03.png" alt="" height="400px"
-            width="400px">
-        </div>
-      </div>
-    </div>
-
-    <div class="welcome">
-      <h1>WELCOME TO BIPHYL PIZZA GURUS</h1>
-    </div>
-
-    <div class="description">
-      <div id="card">
-        <div class="cards">
-          <img src="/images/23803689-pizza-slice-with-different-toppings-isolated-on-white-background-.jpg" alt=""
-            height="250px" width="250px">
-          <h2>Topping</h2>
-          <p>A baked pie of Italian origin consisting of a shallow breadlike crust covered with toppings such as
-            seasoned tomato sauce, cheese, or sausage.</p>
-        </div>
-        <div class="cards">
-          <img src="https://cdn.pixabay.com/photo/2016/04/09/09/22/pizza-1317699__340.jpg" alt="">
-          <img src="/images/download.jpeg" alt="" height="250px" width="250px">
-          <h2>Pizza Crust</h2>
-          <p>The dough that serves as a base for the pizza that is prepared, formed into a circular, square or
-            rectangular shape, baked and then topped with pizza ingredients.</p>
-        </div>
-        <div class="cards">
-          <img src="/images/5a038e703dbef4a7748b4715.jpeg" alt="" height="250px" width="250px">
-          <h2>Pizza Sizes</h2>
-          <p>Pizza size generally varies between: Small Pizza: 8-10 inches with 6 slices. Medium Pizza: 12 inches with 8
-            slices. Large Pizza: 14 inch with 10 slices.</p>
-        </div>
-      </div>
-    </div><br><br><br>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form">
-            <div class="form-group">
-              <label for="size">Size</label><br>
-              <select name="form-control" id="size" class="btn btn-success btn-lg">
-                <option value="choose" id="choose" class="btn-primary"><b><i>Choose size</i></b></option>
-                <option value="small" id="small" class="btn-primary">Small</option>
-                <option value="medium" id="medium" class="btn-primary">Medium</option>
-                <option value="large" id="large" class="btn-primary">Large</option>
-              </select>
-            </div><br>
-            <div class="form-group">
-              <label for="crust">Crust:</label><br>
-              <select name="form-control" id="crust" class="btn btn-success btn-lg">
-                <option value="crust"><b><i>Crust</i></b></option>
-                <option value="crispy" id="crispy" class="btn-primary">Crispy</option>
-                <option value="stuffed" id="stuffed" class="btn-primary">Stuffed</option>
-                <option value="gluten-free" id="gluten-free" class="btn-primary">Gluten-free</option>
-              </select>
-            </div><br>
-            <div class="form-group">
-              <label for="topping">Topping:</label><br>
-              <select name="form-control" id="topping" class="btn btn-success btn-lg">
-                <option value="form-control" class="btn-primary"><b><i>Topping</i></b></option>
-                <option value="pepperoni" class="btn-primary">Pepperoni</option>
-                <option value="mushrooms" class="btn-primary">Mushrooms</option>
-                <option value="onions" class="btn-primary">Onions</option>
-                <option value="sausage" class="btn-primary">Sausage</option>
-                <option value="bacon" class="btn-primary">Bacon</option>
-                <option value="extra-cheese" class="btn-primary">Extra Cheese</option>
-                <option value="black-olives" class="btn-primary">Black Olives</option>
-                <option value="green-peppers" class="btn-primary">Green Peppers</option>
-                <option value="pineapple" class="btn-primary">Pineapple</option>
-                <option value="spinach" class="btn-primary">Spinach</option>
-              </select>
-            </div><br>
-            <div class="form-group">
-              <label for="quantity">Quantity:</label><br>
-              <input type="number" name="quantity" id="quantity" class="btn-success"><br><br>
-            </div>
+  <div class="container-fluid">
+    <div class="content">
+      <div class="header">
+        <div class="container">
+          <div class="title">
+            <h1><b>Biphyl Pizza Gurus</b></h1>
+          </div>
+          <div class="logo">
+            <img src="/images/000821-Free-Logo-Maker-create-free-italian-pizza-Logo-design-03.png" alt=""
+              height="100vh">
           </div>
         </div>
-        <div class="col-md-6">
+      </div>
 
+      <div class="welcome">
+        <h1>WELCOME TO BIPHYL PIZZA GURUS</h1>
+      </div>
+
+      <div class="description">
+        <div id="card">
+          <div class="cards">
+            <img src="/images/23803689-pizza-slice-with-different-toppings-isolated-on-white-background-.jpg" alt=""
+              height="250px" width="250px">
+            <h2>Topping</h2>
+            <p>A baked pie of Italian origin consisting of a shallow breadlike crust covered with toppings such as
+              seasoned tomato sauce, cheese, or sausage.</p>
+          </div>
+          <div class="cards">
+
+            <img src="/images/download.jpeg" alt="" height="250px" width="250px">
+            <h2>Pizza Crust</h2>
+            <p>The dough that serves as a base for the pizza that is prepared, formed into a circular, square or
+              rectangular shape, baked and then topped with pizza ingredients.</p>
+          </div>
+          <div class="cards">
+            <img src="/images/5a038e703dbef4a7748b4715.jpeg" alt="" height="250px" width="250px">
+            <h2>Pizza Sizes</h2>
+            <p>Pizza size generally varies between: Small Pizza: 8-10 inches with 6 slices. Medium Pizza: 12 inches with
+              8
+              slices. Large Pizza: 14 inch with 10 slices.</p>
+          </div>
+        </div>
+      </div><br><br><br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form">
+              <div class="form-group">
+                <label for="size">Size</label><br>
+                <select name="form-control" id="size" onselect="size();" class="btn btn-success btn-lg">
+                  <option value="choose" id="choose" class="btn-primary"><b><i>Choose size</i></b></option>
+                  <option value="small" id="small" class="btn-primary">Small - 350/-</option>
+                  <option value="medium" id="medium" class="btn-primary">Medium - 650/-</option>
+                  <option value="large" id="large" class="btn-primary">Large - 950/-</option>
+                </select>
+              </div><br>
+              <div class="form-group">
+                <label for="crust">Crust:</label><br>
+                <select name="form-control" id="crust" onselect="crust();" class="btn btn-success btn-lg">
+                  <option value="crust"><b><i>Crust</i></b></option>
+                  <option value="200" id="crispy" class="btn-primary">Crispy 200</option>
+                  <option value="200" id="stuffed" class="btn-primary">Stuffed 200 </option>
+                  <option value="200" id="gluten-free" class="btn-primary">Gluten-free 200</option>
+                </select>
+              </div><br>
+              <div class="form-group">
+                <label for="topping">Topping:</label><br>
+                <select name="form-control" id="topping" class="btn btn-success btn-lg">
+                  <option value="form-control" class="btn-primary"><b><i>Topping</i></b></option>
+                  <option value="150" id="pepperoni" onscroll="getPepperoni();" class="btn-primary">Pepperoni</option>
+                  <option value="150" id="mushrooms" onscroll="getMushrooms();" class="btn-primary">Mushrooms</option>
+                  <option value="150" id="onions" onscroll="getOnions();" class="btn-primary">Onions</option>
+                  <option value="150" id="sausage" onscroll="getSausage();" class="btn-primary">Sausage</option>
+                  <option value="150" id="bacon" class="btn-primary">Bacon</option>
+
+                </select>
+              </div><br>
+              <div class="quantity">
+                <h4> How many pizza do you want?</h4>
+                <select class="browser-default custom-select" id="getnumber" onselect="getNumber();">
+                  <option value="1">1 </option>
+                  <option value="2">2 </option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+
+                </select>
+              </div>
+              <br>
+            </div>
+            <button type="button" id="takeorder" class="btn btn-primary" onclick="calculate();">ORDER</button>
+          </div>
+        </div>
+      </div>
+      <p id="showleft"></p>
+      <br><br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="Deliver">
+
+              <h4>Do you want your pizza delivered??</h4>
+              <button type="button" id="deliver" class="btn btn-primary">YES</button><br><br>
+              <button type="button" id="no" class="btn btn-success">NO</button><br><br>
+              <strong>Delivery is ksh.150</strong>
+            </div>
+            <br>
+            <div id="order">
+              <button type="button" id="take" class="btn btn-primary" onclick="Total();">CHECKOUT</button>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
+    <p id="showleft"></p>
   </div>
+
+
+
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -120,6 +152,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  </div>
 </body>
 
 </html>
