@@ -71,16 +71,14 @@
               <div class="form-group">
                 <label for="size">Size</label><br>
                 <select name="form-control" id="size" onselect="size();" class="btn btn-success btn-lg">
-                  <option value="choose" id="choose" class="btn-primary"><b><i>Choose size</i></b></option>
-                  <option value="small" id="small" class="btn-primary">Small - 350/-</option>
-                  <option value="medium" id="medium" class="btn-primary">Medium - 650/-</option>
-                  <option value="large" id="large" class="btn-primary">Large - 950/-</option>
+                  <option value="250" id="small" class="btn-primary">Small - 350/-</option>
+                  <option value="550" id="medium" class="btn-primary">Medium - 650/-</option>
+                  <option value="850" id="large" class="btn-primary">Large - 950/-</option>
                 </select>
               </div><br>
               <div class="form-group">
                 <label for="crust">Crust:</label><br>
                 <select name="form-control" id="crust" onselect="crust();" class="btn btn-success btn-lg">
-                  <option value="crust"><b><i>Crust</i></b></option>
                   <option value="200" id="crispy" class="btn-primary">Crispy 200</option>
                   <option value="200" id="stuffed" class="btn-primary">Stuffed 200 </option>
                   <option value="200" id="gluten-free" class="btn-primary">Gluten-free 200</option>
@@ -89,12 +87,11 @@
               <div class="form-group">
                 <label for="topping">Topping:</label><br>
                 <select name="form-control" id="topping" class="btn btn-success btn-lg">
-                  <option value="form-control" class="btn-primary"><b><i>Topping</i></b></option>
-                  <option value="150" id="pepperoni" onscroll="getPepperoni();" class="btn-primary">Pepperoni</option>
-                  <option value="150" id="mushrooms" onscroll="getMushrooms();" class="btn-primary">Mushrooms</option>
-                  <option value="150" id="onions" onscroll="getOnions();" class="btn-primary">Onions</option>
-                  <option value="150" id="sausage" onscroll="getSausage();" class="btn-primary">Sausage</option>
-                  <option value="150" id="bacon" class="btn-primary">Bacon</option>
+                  <option value="150" id="pepperoni" onselect="getPepperoni();" class="btn-primary">Pepperoni</option>
+                  <option value="150" id="mushrooms" onselect="getMushrooms();" class="btn-primary">Mushrooms</option>
+                  <option value="150" id="onions" onselect="getOnions();" class="btn-primary">Onions</option>
+                  <option value="150" id="sausage" onselect="getSausage();" class="btn-primary">Sausage</option>
+                  <option value="150" id="bacon" onselect="getBacon();" class="btn-primary">Bacon</option>
 
                 </select>
               </div><br>
@@ -115,7 +112,7 @@
           </div>
         </div>
       </div>
-      <p id="showleft"></p>
+      <h2 id="show"></h2>
       <br><br>
       <div class="container">
         <div class="row">
@@ -138,6 +135,19 @@
     </div>
     <p id="showleft"></p>
   </div>
+  <div class="footer">
+    <div class="footer-top">
+      <h4></h4>
+     
+      <h4></h4>
+      
+    </div>
+    <div class="footer-bottom">
+      &copy; Biphyl Pizza Gurus | Biron Odhiambo
+    </div>
+  </div>
+
+
 
 
 
